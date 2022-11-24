@@ -1,6 +1,6 @@
 body {
   margin: auto 20%;
-  background-image: url('neonBackground.jpg');
+  background-image: url('/images/neonBackground.jpg');
   background-position: center top;
   background-size: 62% auto;
   text-align: center;
