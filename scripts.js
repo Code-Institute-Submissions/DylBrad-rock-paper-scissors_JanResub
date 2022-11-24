@@ -61,8 +61,6 @@ function playRound(input) {
     comupterPick.innerHTML = `Computer picked ${computerSelection}`;
     userScoreCount.innerText = `Player: ${userScore}`;
   }
-
-  console.log(roundCount);
 }
 
 // Play round on button click
