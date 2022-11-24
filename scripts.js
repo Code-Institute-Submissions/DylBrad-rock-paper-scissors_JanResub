@@ -12,12 +12,12 @@ let roundCount = parseInt(0);
 const userPick = document.querySelector('#userPick');
 const comupterPick = document.querySelector('#computerPick');
 const roundHeader = document.querySelector('#round');
+let computerScoreCount = document.querySelector('#computerScore');
+let userScoreCount = document.querySelector('#userScore');
 
 function playRound(input) {
   roundHeader.innerText = `Round ${roundCount + 1}`;
 
-  let computerScoreCount = document.querySelector('#computerScore');
-  let userScoreCount = document.querySelector('#userScore');
   const computerSelection = computerPlay();
 
   if (input === computerSelection) {
@@ -78,17 +78,28 @@ buttons.forEach((button) => {
       playRound(input);
       winner.innerText = `${winnerOrLoser()}`;
       roundCount = 0;
-      console.log(roundCount);
       showPlayAgainButton();
     }
   });
 });
 
-const showPlayAgainButton = () => {
-  const playAgainButton = document.getElementById('play-again-button');
+const playAgainButton = document.getElementById('play-again-button');
 
+const showPlayAgainButton = () => {
   playAgainButton.className = 'display-button';
 };
+
+playAgainButton.addEventListener('click', () => {
+  userScore = 0;
+  computerScore = 0;
+  roundCount = 0;
+  userScoreCount.innerText = `Player: ${0}`;
+  computerScoreCount.innerText = `Computer: ${0}.`;
+  userPick.innerText = ``;
+  comupterPick.innerHTML = ``;
+  winner.innerText = '';
+  playAgainButton.className = 'play-again-button';
+});
 
 // Winner or Loser message
 function winnerOrLoser() {
