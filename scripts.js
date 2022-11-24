@@ -82,3 +82,14 @@ buttons.forEach((button) => {
     }
   });
 });
+
+// Winner or Loser message
+function winnerOrLoser() {
+  if (userScore > computerScore) {
+    return 'CONGRATS! YOU WON!';
+  } else if (computerScore > userScore) {
+    return 'GAME OVER! You Lose!';
+  } else if (computerScore === userScore) {
+    return 'It looks like a draw';
+  }
+}
