@@ -61,6 +61,8 @@ function playRound(input) {
     comupterPick.innerHTML = `Computer picked ${computerSelection}`;
     userScoreCount.innerText = `Player: ${userScore}`;
   }
+
+  console.log(roundCount);
 }
 
 // Play round on button click
@@ -72,12 +74,13 @@ buttons.forEach((button) => {
   button.addEventListener('click', () => {
     input = button.id;
 
-    if (roundCount < 4) {
+    if (roundCount === 5) {
+      return;
+    } else if (roundCount < 4) {
       playRound(input);
     } else if (roundCount >= 4) {
       playRound(input);
       winner.innerText = `${winnerOrLoser()}`;
-      roundCount = 0;
       showPlayAgainButton();
     }
   });
@@ -90,6 +93,7 @@ const showPlayAgainButton = () => {
 };
 
 playAgainButton.addEventListener('click', () => {
+  roundCount = 0;
   userScore = 0;
   computerScore = 0;
   roundCount = 0;
