@@ -79,9 +79,16 @@ buttons.forEach((button) => {
       winner.innerText = `${winnerOrLoser()}`;
       roundCount = 0;
       console.log(roundCount);
+      showPlayAgainButton();
     }
   });
 });
+
+const showPlayAgainButton = () => {
+  const playAgainButton = document.getElementById('play-again-button');
+
+  playAgainButton.className = 'display-button';
+};
 
 // Winner or Loser message
 function winnerOrLoser() {

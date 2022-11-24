@@ -85,3 +85,11 @@ body {
   font-weight: 500;
   color: rgb(240, 0, 32);
 }
+
+/* Play again button */
+.play-again-button {
+  display: none;
+}
+.display-button {
+  display: block;
+}
