@@ -62,3 +62,23 @@ function playRound(input) {
     userScoreCount.innerText = `Player: ${userScore}`;
   }
 }
+
+// Play round on button click
+
+const buttons = document.querySelectorAll('button');
+const winner = document.querySelector('#winnerAnnouncement');
+
+buttons.forEach((button) => {
+  button.addEventListener('click', () => {
+    input = button.id;
+
+    if (roundCount < 4) {
+      playRound(input);
+    } else if (roundCount >= 4) {
+      playRound(input);
+      winner.innerText = `${winnerOrLoser()}`;
+      roundCount = 0;
+      console.log(roundCount);
+    }
+  });
+});
