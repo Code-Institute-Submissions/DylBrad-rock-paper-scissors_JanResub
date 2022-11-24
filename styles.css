@@ -41,3 +41,47 @@ body {
   height: 70px;
   border-radius: 50%;
 }
+
+/* Scoreboard and results */
+.scoreboard {
+  min-width: 215px;
+  display: grid;
+  grid-template-areas:
+    'title title'
+    'user computer';
+  gap: 5px;
+  border: 1px solid red;
+}
+
+.scoreHeader {
+  grid-area: title;
+  background-color: aqua;
+  margin: 0;
+  padding: 5%;
+}
+
+.userScore {
+  grid-area: user;
+  background-color: aqua;
+  margin: 0;
+  padding: 5%;
+  min-width: 90px;
+}
+
+.compScore {
+  grid-area: computer;
+  background-color: aqua;
+  margin: 0;
+  padding: 5%;
+  min-width: 90px;
+}
+
+.results {
+  height: 130.47px;
+}
+
+.winnerBox {
+  font-size: large;
+  font-weight: 500;
+  color: rgb(240, 0, 32);
+}
