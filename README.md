@@ -36,3 +36,14 @@ This is a Rock Paper Scissors game, built with HTML, CSS and JavaScript. Users h
 * Background body image
   * Human Vectors by Vecteezy:
   * https://www.vecteezy.com/free-vector/human
+
+# Deployment
+
+This website is hosted in GitHub pages.
+
+Steps:
+* In repository, go to _settings_
+* Under _code and automation_ sidebar, select _pages_
+* Under source select _deploy from branch_
+* Under branch selest _main_
+* save
