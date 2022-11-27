@@ -16,6 +16,12 @@ body {
   align-items: center;
   justify-content: center;
 }
+a {
+  color: yellow;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
 
 /* Buttons */
 .rockBtn {
