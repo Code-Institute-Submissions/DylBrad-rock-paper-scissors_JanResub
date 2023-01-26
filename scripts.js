@@ -63,8 +63,6 @@ function playRound(input) {
   }
 }
 
-// Play round on button click
-
 const buttons = document.querySelectorAll('button');
 const winner = document.querySelector('#winnerAnnouncement');
 
@@ -103,7 +101,6 @@ playAgainButton.addEventListener('click', () => {
   playAgainButton.className = 'play-again-button';
 });
 
-// Winner or Loser message
 function winnerOrLoser() {
   if (userScore > computerScore) {
     return 'CONGRATS! YOU WON!';
