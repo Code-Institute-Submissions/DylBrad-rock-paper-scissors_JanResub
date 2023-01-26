@@ -1,5 +1,6 @@
 const hands = ['ROCK', 'PAPER', 'SCISSORS'];
 
+// Generate a random hand for computers turn
 function computerPlay() {
   let randomHand = hands[Math.floor(Math.random() * hands.length)];
 
@@ -15,6 +16,8 @@ const roundHeader = document.querySelector('#round');
 let computerScoreCount = document.querySelector('#computerScore');
 let userScoreCount = document.querySelector('#userScore');
 
+// playRound function takes randomly generated computers hand and players hand
+// and adjusts the scores appropriately
 function playRound(input) {
   roundHeader.innerText = `Round ${roundCount + 1}`;
 
@@ -66,6 +69,7 @@ function playRound(input) {
 const buttons = document.querySelectorAll('button');
 const winner = document.querySelector('#winnerAnnouncement');
 
+// Event listener on the 'hand' buttons triggers a new round
 buttons.forEach((button) => {
   button.addEventListener('click', () => {
     input = button.id;
@@ -82,6 +86,8 @@ buttons.forEach((button) => {
   });
 });
 
+// Play Again Functionality Below
+// If button is clicked, all variables are reset.
 const playAgainButton = document.getElementById('play-again-button');
 
 const showPlayAgainButton = () => {
@@ -101,6 +107,7 @@ playAgainButton.addEventListener('click', () => {
   playAgainButton.className = 'play-again-button';
 });
 
+// At the end of the game, winner message is displayed on the scoreboard
 function winnerOrLoser() {
   if (userScore > computerScore) {
     return 'CONGRATS! YOU WON!';
