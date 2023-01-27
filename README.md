@@ -17,8 +17,11 @@ This is a Rock Paper Scissors game, built with HTML, CSS and JavaScript. Users h
 
 # Score
 
-1. The scoreboard is displayed on the scoreboard below the buttons.
-2. Both the computer and users hand choices for each round are displayed below the scoreboard.
+1. The scoreboard is displayed below the buttons.
+2. The scoreboard displays:
+  - The round (1 - 5)
+  - The user and computer score
+  - The user and computer hand
 
 ![Buttons](./assets/images/readmeScore.png)
 
@@ -39,6 +42,8 @@ This is a Rock Paper Scissors game, built with HTML, CSS and JavaScript. Users h
 
 - No errors returned after passing HTML through [W3C Validator](https://validator.w3.org/nu/)
 - No errors returned after passing CSS through [Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/validator)
+- JavaScript passes through validator with only minor error
+  - Error: unexpected const
 
 # Credit
 
@@ -59,4 +64,4 @@ Steps:
 - Under _code and automation_ sidebar, select _pages_
 - Under source select _deploy from branch_
 - Under branch selest _main_
-- save
+- Save
