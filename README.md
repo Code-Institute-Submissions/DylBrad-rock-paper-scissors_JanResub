@@ -19,9 +19,10 @@ This is a Rock Paper Scissors game, built with HTML, CSS and JavaScript. Users h
 
 1. The scoreboard is displayed below the buttons.
 2. The scoreboard displays:
-  - The round (1 - 5)
-  - The user and computer score
-  - The user and computer hand
+
+- The round (1 - 5)
+- The user and computer score
+- The user and computer hand
 
 ![Buttons](./assets/images/readmeScore.png)
 
@@ -32,10 +33,17 @@ This is a Rock Paper Scissors game, built with HTML, CSS and JavaScript. Users h
 
 ![Buttons](./assets/images/readmeWinner.png)
 
+# Future fetures to implement
+
+1. Enter username
+2. Save username to database
+3. Save wins to a database, uptade database with each win
+4. Create leaderboard for users, ranked by number of wins
+
 # Testing
 
 - Buttons work as expected.
-- Game finishes after 5 rounds and buttons will not work, as expected.
+- Game finishes after 5 rounds and hand buttons will not work, as expected.
 - Play again button resets score count and allows user to play again
 
 # Validator Testing
@@ -53,6 +61,8 @@ This is a Rock Paper Scissors game, built with HTML, CSS and JavaScript. Users h
 - Background body image
   - Human Vectors by Vecteezy:
   - https://www.vecteezy.com/free-vector/human
+- Favicon
+  - https://icons8.com/icons/set/rock-paper-scissors
 
 # Deployment
 
