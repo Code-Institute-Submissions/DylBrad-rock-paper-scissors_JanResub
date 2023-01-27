@@ -6,14 +6,18 @@ This is a Rock Paper Scissors game, built with HTML, CSS and JavaScript. Users h
 
 1. Hand Buttons
 
-- The hand buttons allow the user to pick a hand (rock, paper or scissors).
+- The hand buttons allow the user to pick a hand.
 - They have a background image to help visually identidy your choice.
+- The choices are as follows:
+  - Rock
+  - Paper
+  - Scissors
 
 ![Buttons](./assets/images/readmeButtons.png)
 
 # Score
 
-1. The score is displayed on the scoreboard below the buttons.
+1. The scoreboard is displayed on the scoreboard below the buttons.
 2. Both the computer and users hand choices for each round are displayed below the scoreboard.
 
 ![Buttons](./assets/images/readmeScore.png)
